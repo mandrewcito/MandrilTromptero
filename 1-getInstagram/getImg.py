@@ -14,6 +14,8 @@ def main():
     print "SOURCE can be a file(with links separated with \n) or an link"
     print "-h | --help  -> print this menu"
     print "-q quiet "
+    print "-f \"DEST\" store files in folder DEST"
+    print "-p progress bar "
     return
   isFile=os.path.isfile(args[total-1])
   isURL=args[total-1].startswith("http://")
@@ -22,12 +24,15 @@ def main():
     return
   quiet=""
   folder="."
+  progress=False
   for n,arg in enumerate(args):
     if arg=="-q":
       quiet=arg
     if arg=="-f":
       folder=arg[n+1]
-  getter=GetPic(quiet,folder)
+    if arg=="-p":
+      progress=True
+  getter=GetPic(quiet,folder,progress)
   if isFile:
     getter.getMultimediaFromFile(args[total-1])
   if isURL:

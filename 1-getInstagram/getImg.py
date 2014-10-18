@@ -14,7 +14,7 @@ def main():
     print "SOURCE can be a file(with links separated with \n) or an link"
     print "-h | --help  -> print this menu"
     print "-q quiet "
-    print "-f \"DEST\" store files in folder DEST"
+    print "-d \"DEST\" store files in directory DEST"
     print "-p progress bar "
     return
   isFile=os.path.isfile(args[total-1])
@@ -22,17 +22,22 @@ def main():
   if not isURL and not isFile:
     print "enter a valid url or a valid file "
     return
-  quiet=""
-  folder="."
+  quiet=False
+  directory="./"
   progress=False
   for n,arg in enumerate(args):
+    print arg
     if arg=="-q":
-      quiet=arg
-    if arg=="-f":
-      folder=arg[n+1]
+      quiet=True
+    if arg=="-d":
+      directory=args[n+1]
     if arg=="-p":
       progress=True
-  getter=GetPic(quiet,folder,progress)
+  isDir=os.path.isdir(directory)
+  if not isDir:
+    print "enter a valid directory"
+    return
+  getter=GetPic(quiet,directory,progress)
   if isFile:
     getter.getMultimediaFromFile(args[total-1])
   if isURL:

@@ -11,8 +11,8 @@ def main():
   args = sys.argv[1:]
   if args[0]=="-h" or args[0]=="--help" or total==0:
     print "getImg.py [OPTIONS][SOURCE]"
-    print "SOURCE can be a file(with links separated with \n) or an link"
-    print "-h | --help  -> print this menu"
+    print "SOURCE can be a file(with links) or an link"
+    print "-h | --help  print this menu"
     print "-q quiet "
     print "-d \"DEST\" store files in directory DEST"
     print "-p progress bar "

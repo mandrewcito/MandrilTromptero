@@ -1,0 +1,15 @@
+{
+    "manifest_version":2,
+    "name": "Nombre de la extensión",
+    "version":"0.1",
+    "description": "Mi primera extension",
+    "browser_action": {
+        "default_icon": "icon.jpeg",
+        "name": "Click to get URL"
+        },
+        "content_scripts": [{
+            "js": ["contentscript.js"],
+            "matches": ["http://instagram.com/*"]
+        }],
+    "permissions": ["tabs"]
+}

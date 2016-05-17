@@ -27,10 +27,8 @@ class GetPic:
       if linea.startswith("http://"):
         self.getMultimedia(linea)
         if self.progress:
-          print descarga+">"
+          print descarga+">\r"
         if not self.quiet:
           print "fichero "+linea+" descargado"
           descarga+=descarga
-      else:
-        if not self.quiet:
-          print linea+"is not a valid link"
+    print"\n"

@@ -1,0 +1,28 @@
+Creación de una página web que permita visualizar las opiniones de los usuarios de twitter sobre un producto
+Titulación
+
+Grado en Informatica
+
+Tipo
+
+Proyecto clásico de Ingeniería
+
+Objetivo
+
+El objetivo de este trabajo es crear una página web que permita visualizar la opinión que los usuarios de twitter tienen sobre un producto determinado. La página web permitirá a un usuario configurar las denominaciones más comunes con las que los personas se refieren a un producto determinado, y la página presentará una serie de informes respecto a las opiniones más comunes que los usuarios de twitter tiene sobre dichos productos.
+
+Descripción
+Twitter es una de las redes sociales más utilizadas en el mundo. Los medios de comunicación de masas y los fabricantes de productos, acuden frecuentemente a dicha red social para conocer la opinión que uno de sus programas/productos generan en los usuarios de dicha red social. En el presente trabajo, el alumno creará una página web en la que un usuario podrá configurar las denominaciones más comunes con las que las personas se refieren a un producto/programa. La página web realizará búsquedas en twitter a través de su API para recabar los tweets referentes a dicho programa/producto y los usará para generar informes que permitan visualizar un resumen de dichas opiniones. Dichos informes permitirán, por ejemplo, conocer los adjetivos que más a menudo usan los usuarios para calificar el programa/producto objeto de dicho estudio, en una región determinada y/o dentro de un rango de fechas determinado. La página web se creará preferentemente utilizando el framework Django. Se accederá a la información de twitter utilizando el API que proporciona dicha plataforma, y el análisis del contenido de los tweets se realizará preferentemente utilizando la librería pattern de Python. También podría ser necesario utilizar alguna librería de las muchas que Python proporciona para realizar gráficas, con el objeto de mostrar los datos de una forma mucho más visual. Nota: La aceptación y realización de este proyecto están condicionadas a la firma de un acuerdo de compartición de la propiedad intelectual del software desarrollado entre alumno y director, que permita su uso en el ejercicio profesional de la docencia, investigación, y transferencia tecnológica, y sin perjuicio de los derechos del alumno.
+Departmento
+Electrónica y Sistemas
+Estado
+Aprobado.
+Material
+- Un PC para el desarrollo de la aplicación. - Una copia de los paquetes de las herramientas elegidas para el desarrollo de aplicación.
+Metodología
+Para la implementación de dicha herramienta se seguirá la metodología de desarrollo ágil SCRUM. El tutor del trabajo asumirá el rol de "Product Owner" y "Scrum Master" mientras que el rol del equipo de desarrollo será asumido en su mayor parte por el alumno, auxiliado y asesorado en dichas tareas por el propio tutor.
+Fases
+- Familiarización con las tecnologías a emplear a lo largo del proyecto. - Análisis y diseño de la aplicación web. - Implementación de la aplicación web. - Prueba de la aplicación web.
+Número de asignaciones
+1
+
